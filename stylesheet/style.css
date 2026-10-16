@@ -18,7 +18,7 @@ main,body{
     font-size: clamp(15px,1vw,25px);
 }
 .grades-content .grades-title{
-  font-size: clamp(17px,1.7vw,28px);   
+    font-size: clamp(17px,1.7vw,28px);   
 }
 .grades-link a{
     text-decoration: none;
@@ -145,3 +145,7 @@ position: relative;
     text-align: center;
 }
 }
+
+/* ahmed start profile view */
+
+/* ahmed end profile view */
