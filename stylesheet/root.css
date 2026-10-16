@@ -11,8 +11,10 @@
     --purple-gray: #7C7E9D;
     --dark-blue: #4C5372;
       --light-lavender: #FAF8FF;
+      --light-purple: rgb(243 242 255 / 0.4);
       --black:black;
       --white:white;
+      --tw-bg-opacity: 1;
 }
 body {
     font-family: 'Poppins', sans-serif;
