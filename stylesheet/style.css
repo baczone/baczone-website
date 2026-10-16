@@ -1,0 +1,147 @@
+main,body{
+    overflow-x: hidden;
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+.grades-section {
+    background-color: #FAF8FF;
+}
+.grades-intro{
+    display: flex;
+    justify-content: space-between;
+    padding:40px 10px;
+}
+
+.grades-content .grades-pargraph{
+    font-size: clamp(15px,1vw,25px);
+}
+.grades-content .grades-title{
+  font-size: clamp(17px,1.7vw,28px);   
+}
+.grades-link a{
+    text-decoration: none;
+    font-size: clamp(14px,1.3vw,28px);
+color: var( --dark-blue);
+display: inline-block;
+transition: 0.5s;
+}
+.grades-link a:hover{
+color: black;
+}
+.grades-container{
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+.grade-card{
+    
+    width: clamp(300px,23vw,400px);
+    height: auto;
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    padding-bottom: 20px;
+    border-radius: 10px 10px;
+position: relative;
+    transition: 0.5s;
+}
+.grade-card-Subject{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+.grade-card-Description{
+      position: absolute;
+    top: 3%;
+    left: 70%;
+}
+.grade-card-Subject p{
+    border: 1px solid var(white);
+    background-color: var(--white);
+    border-radius: 10px 10px;
+    width: 120px;
+       font-size: clamp(12px,1.2vw,20px);
+    text-align: center;
+}
+.grade-card-Description p{
+      border: 1px solid  var(--pink);
+      background-color: var(--pink);
+      border-radius: 10px 10px;
+    width: 80px;
+    font-size: clamp(9px,0.9vw,15px);
+    text-align: center;
+}
+.grade-card:hover{
+    box-shadow: 0 0 5px var(--dark-blue);
+}
+.grade-card-name{
+    transform: translateY(-10px);
+}
+.grade-card .grade-image{
+    width: clamp(300px,23vw,400px);
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+.grade-star{
+    display: flex;
+    gap: 6px;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+.grade-star i{
+    padding-top: 5px;
+    color: var(--dark-blue);
+}
+.grade-card-name{
+    padding-left: 8px;
+}
+.grade-card-text{
+    padding-left: 10px;
+    width: clamp(200px,19.6vw,300px);
+}
+.grade-card-price{
+    padding-left: 8px;
+  line-height: 9px;
+}
+.grade-card-links-link a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--pink);
+    padding: 10px 15px;
+    background-color: var(--pink);
+    border-radius: 10px 10px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.grade-card-links-link a:hover{
+    background-color: var(  --dark-blue);
+    color: var(--white);
+    border: 1px solid var(--dark-blue);
+}
+.grade-card-links{
+    display: flex;
+   padding-left: 8px;
+    justify-content: space-between;
+}
+.grade-card-price p:nth-child(1){
+    color: var(--dark-blue);
+}
+@media (max-width:991px) {
+    .grades-section {
+        padding-bottom: 20px;
+        min-height: 20vh;
+    }
+    .grades-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: 50px;
+}
+.grades-intro{
+    flex-direction: column;
+    text-align: center;
+}
+}
