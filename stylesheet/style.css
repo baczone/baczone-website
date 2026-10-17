@@ -32,12 +32,13 @@ color: black;
 }
 .grades-container{
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+   padding-right: 10px;
    padding-left: 10px;
 }
 .grade-card{
     
-    width: clamp(300px,21vw,400px);
+    width: clamp(250px,23.3vw,700px);
     height: auto;
     border: 1px solid var(--white);
     background-color: var(--white);
@@ -79,7 +80,7 @@ position: relative;
     transform: translateY(-10px);
 }
 .grade-card .grade-image{
-    width: clamp(300px,21vw,400px);
+    width: clamp(250px,23.3vw,400px);
     height: auto;
     border-radius: 10px 10px 0 0;
 }
@@ -132,7 +133,7 @@ position: relative;
 .carts-books{
     border: 1px solid var(--white);
     background-color: var(--white);
-    width: clamp(320px,29.7vw,400px);
+    width: clamp(320px,31vw,600px);
     height: auto;
     border-radius: 10px 10px;
     padding-bottom: 3px;
@@ -219,13 +220,13 @@ border: none;
 }
 .reviews-list{
     display: flex;
-    gap: 35px;
-    padding-left: 10px;
+   justify-content: space-between;
+    padding: 0 10px;
     padding-top: 70px;
 }
 .review-card{
     
-    width: clamp(300px,30.4vw,400px);
+    width: clamp(300px,30.4vw,600px);
     height: auto;
     border: 1px solid var(--white);
     border-radius: 10px 10px;
