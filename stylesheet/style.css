@@ -499,13 +499,12 @@ border-radius: 20px 20px;
     font-size: clamp(12px, 0.95vw, 16px);
     white-space: nowrap;
 }
+
 .about-hero {
     position: relative;
     width: 100%;
-    
-    padding: clamp(32px, 5vw, 56px) 0
-             clamp(64px, 7vw, 96px);
-
+    box-sizing: border-box;
+    padding: clamp(32px, 5vw, 56px) 0 clamp(64px, 7vw, 96px);
     background-color: var(--light-lavender);
     color: var(--dark-blue);
 }
@@ -516,39 +515,37 @@ border-radius: 20px 20px;
     top: clamp(-96px, -8%, -48px);
     left: 50%;
     transform: translateX(-50%);
-
     width: clamp(320px, 75vw, 900px);
     height: clamp(240px, 35vw, 400px);
-
     background: linear-gradient(
         to bottom,
         var(--light-purple),
         rgb(226 212 224 / 0.3),
         transparent
     );
-
     filter: blur(48px);
     opacity: 0.7;
     pointer-events: none;
 }
 
-/* Main Container */
-.hero-container {
+/* Main Containers */
+.hero-container,
+.metrics-container,
+.story-container,
+.mission-container,
+.values-container {
     position: relative;
-    z-index: 1;
-
     width: 100%;
-    max-width: 1240px;
-
+    max-width: none;
     margin-inline: auto;
-    padding-inline: clamp(16px, 3vw, 32px);
+    padding-inline: 10px;
+    box-sizing: border-box;
 }
 
 /* Main Grid */
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-
     align-items: center;
     gap: clamp(32px, 4vw, 40px);
 }
@@ -556,12 +553,11 @@ border-radius: 20px 20px;
 /* Hero Content */
 .hero-content {
     grid-column: span 7;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     gap: clamp(20px, 3vw, 24px);
+    min-width: 0;
 }
 
 /* Academic Badge */
@@ -569,14 +565,12 @@ border-radius: 20px 20px;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-
     padding: 8px clamp(12px, 2vw, 14px);
-
     border-radius: 50px;
     background-color: var(--pink);
     color: var(--dark-blue);
-
     max-width: 100%;
+    box-sizing: border-box;
 }
 
 .badge-icon {
@@ -596,12 +590,10 @@ border-radius: 20px 20px;
 /* Main Heading */
 .hero-title {
     margin: 0;
-
     font-size: clamp(32px, 4.3vw, 60px);
     line-height: 1.12;
     letter-spacing: -0.04em;
     font-weight: 700;
-
     color: var(--dark-blue);
 }
 
@@ -614,10 +606,8 @@ border-radius: 20px 20px;
 .hero-description {
     max-width: 576px;
     margin: 0;
-
     font-size: clamp(15.2px, 1.4vw, 18px);
     line-height: 1.8;
-
     color: var(--blue-gray);
 }
 
@@ -626,7 +616,6 @@ border-radius: 20px 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
     gap: clamp(12px, 2vw, 16px);
     padding-top: 8px;
 }
@@ -636,23 +625,17 @@ border-radius: 20px 20px;
     align-items: center;
     justify-content: center;
     gap: 8px;
-
-    padding: clamp(12px, 1.5vw, 14px)
-             clamp(16px, 2vw, 24px);
-
+    padding: clamp(12px, 1.5vw, 14px) clamp(16px, 2vw, 24px);
     border-radius: 10px;
     text-decoration: none;
-
     font-size: clamp(12.8px, 1.2vw, 15.2px);
     font-weight: 600;
-
     transition: 0.3s ease;
 }
 
 .primary-btn {
     background-color: var(--dark-blue);
     color: var(--white);
-
     box-shadow: 0 2px 5px rgb(76 83 114 / 0.08);
 }
 
@@ -693,19 +676,15 @@ border-radius: 20px 20px;
 
 .hero-image-card {
     position: relative;
-
     padding: clamp(10px, 1.5vw, 16px);
-
     border-radius: 14px;
     background-color: var(--white);
-
     box-shadow: 0 10px 30px rgb(76 83 114 / 0.08);
 }
 
 .hero-image-wrapper {
     position: relative;
     overflow: hidden;
-
     aspect-ratio: 4 / 3;
     border-radius: 10px;
 }
@@ -714,7 +693,6 @@ border-radius: 20px 20px;
     display: block;
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
@@ -722,36 +700,29 @@ border-radius: 20px 20px;
 .image-overlay {
     position: absolute;
     inset: 0;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
     padding: clamp(16px, 3vw, 24px);
-
     background: linear-gradient(
         to top,
         rgb(76 83 114 / 0.75),
         transparent 70%
     );
-
     color: var(--white);
 }
 
 .image-label {
     margin-bottom: 8px;
-
     color: var(--pink);
     font-size: clamp(10.4px, 1.1vw, 12.8px);
     font-weight: 600;
-
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
 .image-caption {
     margin: 0;
-
     font-size: clamp(16px, 1.8vw, 22.4px);
     line-height: 1.4;
     font-style: italic;
@@ -761,21 +732,16 @@ border-radius: 20px 20px;
 /* Floating Badge */
 .floating-badge {
     position: absolute;
-
-    top:88% ;
-  
+    top: 88%;
     display: flex;
     align-items: center;
-
     gap: clamp(10px, 1.5vw, 14px);
     padding: clamp(12px, 2vw, 16px);
-
     width: max-content;
     max-width: min(240px, 90%);
-
+    box-sizing: border-box;
     border-radius: 14px;
     background-color: var(--white);
-
     box-shadow: 0 12px 28px rgb(76 83 114 / 0.12);
 }
 
@@ -783,12 +749,9 @@ border-radius: 20px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: clamp(40px, 4vw, 44px);
     height: clamp(40px, 4vw, 44px);
-
     flex-shrink: 0;
-
     border-radius: 50%;
     background-color: var(--pink);
     color: var(--dark-blue);
@@ -804,7 +767,6 @@ border-radius: 20px 20px;
 
 .floating-content h3 {
     margin: 0 0 4px;
-
     font-size: clamp(14.4px, 1.5vw, 16.8px);
     font-weight: 700;
     color: var(--dark-blue);
@@ -812,26 +774,19 @@ border-radius: 20px 20px;
 
 .floating-content p {
     margin: 0;
-
     font-size: clamp(11.2px, 1.1vw, 12.8px);
     color: var(--blue-gray);
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+/* Platform Metrics */
 .platform-metrics {
     width: 100%;
+    box-sizing: border-box;
     padding: clamp(32px, 4vw, 40px) 0;
     background-color: var(--light-purple);
-}
-
-.metrics-container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 clamp(16px, 2vw, 24px);
 }
 
 .metrics-grid {
@@ -844,6 +799,7 @@ border-radius: 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 0;
     padding: clamp(16px, 2vw, 24px);
     background-color: var(--white);
     border-radius: 12px;
@@ -887,25 +843,18 @@ border-radius: 20px 20px;
     line-height: 1.6;
     color: var(--blue-gray);
 }
-.metric-card:hover{
+
+.metric-card:hover {
     box-shadow: 0 0 10px var(--dark-blue);
 }
-/* Founding Story */
 
+/* Founding Story */
 .founding-story {
     width: 100%;
+    box-sizing: border-box;
     padding: clamp(48px, 6vw, 80px) 0;
     background-color: var(--light-lavender);
     color: var(--dark-blue);
-}
-
-.story-container,
-.mission-container,
-.values-container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 clamp(16px, 2vw, 24px);
 }
 
 .story-grid {
@@ -978,9 +927,11 @@ border-radius: 20px 20px;
 }
 
 .story-feature {
+    min-width: 0;
     padding: clamp(14px, 1.5vw, 16px);
     border-radius: 8px;
     background-color: var(--light-purple);
+    box-sizing: border-box;
 }
 
 .story-feature h3 {
@@ -1023,6 +974,7 @@ border-radius: 20px 20px;
     left: -8%;
     width: 240px;
     max-width: 85%;
+    box-sizing: border-box;
     padding: 16px;
     border-radius: 12px;
     background-color: var(--white);
@@ -1054,11 +1006,10 @@ border-radius: 20px 20px;
     color: var(--blue-gray);
 }
 
-
 /* Mission & Vision */
-
 .mission-vision {
     width: 100%;
+    box-sizing: border-box;
     padding: clamp(48px, 6vw, 64px) 0;
     background-color: var(--light-purple);
 }
@@ -1104,7 +1055,7 @@ border-radius: 20px 20px;
 }
 
 .mission-card:hover {
-    box-shadow: 0 0px 10px var(--dark-blue);
+    box-shadow: 0 0 10px var(--dark-blue);
 }
 
 .mission-main {
@@ -1173,11 +1124,9 @@ border-radius: 20px 20px;
     font-weight: 600;
 }
 
-
-/* Educational Values */
-
 .educational-values {
     width: 100%;
+    box-sizing: border-box;
     padding: clamp(48px, 6vw, 80px) 0;
     background-color: var(--light-lavender);
 }
@@ -1198,13 +1147,13 @@ border-radius: 20px 20px;
     padding: clamp(16px, 2vw, 24px);
     border-radius: 12px;
     background-color: var(--white);
-
-    transition:0.5s;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
 
 .value-card:hover {
-   box-shadow: 0 0 10px var(--dark-blue);
-   transform: translateY(-10px);
+    box-shadow: 0 0 10px var(--dark-blue);
+    transform: translateY(-10px);
 }
 
 .value-icon {
@@ -1237,6 +1186,20 @@ border-radius: 20px 20px;
     line-height: 1.7;
     color: var(--blue-gray);
 }
+
+
+.hero-grid,
+.story-grid,
+.metrics-grid,
+.mission-grid,
+.values-grid {
+    min-width: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
 @media (max-width:991px) {
     .grades-section {
         padding-bottom: 20px;
