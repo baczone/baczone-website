@@ -13,6 +13,7 @@
       --light-lavender: #FAF8FF;
       --black:black;
       --white:white;
+      --red:#ba1a1a;
 }
 body {
     font-family: 'Poppins', sans-serif;

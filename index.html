@@ -22,76 +22,158 @@
 
 <body>
     <main>
-        <header class="site-header">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-4">
+  
+<header class="baczone-header">
+    <nav class="navbar navbar-expand-lg baczone-navbar">
+        <div class="container-fluid navbar-container">
 
-            <a class="navbar-brand" href="#">
-                <span class="brand-icon icon-placeholder"></span>
-                <span class="brand-name">BacZone</span>
-            </a>
+            <!-- Logo -->
+            <div class="navbar-brand-area">
+                <a class="navbar-brand baczone-brand" href="#">
+                  
 
-            <button class="navbar-toggler"
+                    <span class="material-symbols-outlined brand-icon">menu_book</span>
+                    <span class="brand-name">BacZone</span>
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button
+                class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
+                data-bs-target="#baczoneNavbar"
+                aria-controls="baczoneNavbar"
                 aria-expanded="false"
-                aria-label="Toggle navigation">
-
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="mainNavbar">
+           
+            <div class="collapse navbar-collapse" id="baczoneNavbar">
 
-                <ul class="navbar-nav mx-auto align-items-lg-center">
+               
+                <ul class="navbar-nav main-nav">
 
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                              Courses
-                        </a>
-                   </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
+                    
+                    <li class="nav-item dropdown courses-dropdown">
+
+                        <button
+                            class="nav-link dropdown-toggle courses-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Courses
+                            <span class="material-symbols-outlined dropdown-icon">
+                                expand_more
+                            </span>
+                        </button>
+
+                        <div class="dropdown-menu mega-menu">
+
+                            <div class="mega-menu-grid">
+
+                                <div class="course-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">school</span>
+                                        <h4>1st Secondary</h4>
+                                    </div>
+
+                                    <ul>
+                                        <li><a href="#">Arabic Language</a></li>
+                                        <li><a href="#">English Language</a></li>
+                                        <li><a href="#">Mathematics</a></li>
+                                        <li><a href="#">Physics</a></li>
+                                        <li><a href="#">Chemistry</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="course-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">workspace_premium</span>
+                                        <h4>2nd Secondary</h4>
+                                    </div>
+
+                                    <ul>
+                                        <li><a href="#">Arabic Language</a></li>
+                                        <li><a href="#">English Language</a></li>
+                                        <li><a href="#">Pure &amp; Applied Math</a></li>
+                                        <li><a href="#">Physics</a></li>
+                                        <li><a href="#">Chemistry</a></li>
+                                    </ul>
+                                </div>
+
+                        
+                                <div class="course-column featured-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">military_tech</span>
+                                        <h4>3rd Thanawya</h4>
+                                    </div>
+
+                                    <ul>
+                                        <li><a href="#">Arabic Comprehensive</a></li>
+                                        <li><a href="#">English Advanced</a></li>
+                                        <li><a href="#">Calculus &amp; Algebra</a></li>
+                                        <li><a href="#">National Physics</a></li>
+                                        <li><a href="#">Organic Chemistry</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#teachers">Teachers</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#login">Login / Register</a>
+                        <a class="nav-link" href="#">Teachers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login / Register</a>
                     </li>
 
                 </ul>
 
+                
                 <div class="navbar-actions">
 
-                    <a href="#resources"
-                       class="nav-icon icon-placeholder"
-                       aria-label="Resources"></a>
-
-                    <a href="#notifications"
-                       class="nav-icon notification-icon icon-placeholder"
-                       aria-label="Notifications">
-                        <span class="notification-badge"></span>
+                    <a class="navbar-action"href="#"aria-label="Educational Books">
+                        <span class="material-symbols-outlined">auto_stories</span>
                     </a>
 
-                    <a href="#" class="profile-link"> 
-                      <span class="profile-image"></span>
-                      <span class="profile-name"></span>
+                    <a class="navbar-action cart-action" href="#" aria-label="Cart">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        
+                    </a>
+
+                    <span class="navbar-divider"></span>
+
+                    <a class="profile-link" href="#">
+                        <img src=""alt=""class="profile-image" >
+                        <span class="profile-name"></span>
                     </a>
 
                 </div>
-
             </div>
         </div>
     </nav>
 </header>
+
+
+  
+
+
+
 <section class="hero-section">
     <div class="hero-content">
 
@@ -432,8 +514,7 @@
         </section>
         <!-- ahmed end profile view -->
     </section>
-    <!-- Ahmed -->
-    <section></section>
+   
     <section class="book-section section">
         <div class="books-header">
             <div class="content-header">
