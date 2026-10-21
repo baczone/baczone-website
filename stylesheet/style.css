@@ -1843,6 +1843,7 @@ img {
    height: 100%;
    border-radius: 100%;
    object-fit: cover;
+   object-position: center;
    display: block;
 }
 
@@ -1939,6 +1940,56 @@ img {
 
 .profile p {
    margin: 0px;
+}
+
+.advisory-section{
+   background-color: var(--light-lavender);
+   padding-bottom: 44px;
+}
+
+.advisory-section .profile-header {
+   display: grid;
+   grid-template-columns: 1.5fr 1.2fr;
+   /* align-items: flex-end; */
+   padding: 40px 10px;
+}
+
+.advisory-section .grades-pargraph{
+   color: var(--purple-gray);
+}
+
+.advisory-section .profile-cards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 24px;
+   padding: 0 10px;
+}
+
+.advisory-section .profile-card{
+   background-color: var(--white); 
+}
+
+.advisory-section .profile-academic{
+   margin-bottom: 8px;
+}
+
+.advisory-section .profile-descip{
+   margin-top: 12px;
+}
+
+.advisory-section .profile-img{
+   margin: 8px;
+   border-radius: 16px;
+}
+
+.advisory-section .profile-info{
+   margin-top: 8px;
+   margin-inline: 8px;
+}
+
+.advisory-section .profile-more{
+   display: flex;
+   justify-content: space-between;
 }
 /* ahmed end profile view */
 @media (max-width: 991px) {
@@ -2104,8 +2155,19 @@ img {
    .profile-header{
       flex-direction: column;
       align-items: flex-start;
-      gap: 8px;
+      gap: 12px;
    }
+
+   .advisory-section .profile-cards {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .advisory-section .profile-header {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      text-align: left;
+   }
+}
    /* ahmed end */
 
    .footer {
