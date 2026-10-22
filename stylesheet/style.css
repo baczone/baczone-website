@@ -1991,6 +1991,123 @@ img {
    justify-content: space-between;
 }
 /* ahmed end profile view */
+
+.testimonial {
+    background-color: var(--white);
+    padding: 45px;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: none;
+    margin: 35px 10px;
+    box-sizing: border-box;
+    border: 2px solid #e4d8f0;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(76, 83, 114, 0.18);
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.review {
+    flex: 1;
+    min-width: 0;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #f3e8fa;
+    color: #75518c;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.review h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(22px, 2.2vw, 30px);
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--black);
+    margin-bottom: 22px;
+}
+
+.student-info {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--black);
+}
+
+.student-info strong {
+    color: var(--dark-blue);
+}
+
+.stats {
+    width: 34%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat-card {
+    background-color: #eee5f7;
+    border: 1px solid #d9c7eb;
+    border-radius: 15px;
+    padding: 22px 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 100px;
+}
+
+.stat-icon {
+    font-size: 25px;
+    color: var(--black);
+    flex-shrink: 0;
+}
+.material-symbols-outlined {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.stat-text {
+    min-width: 0;
+}
+
+.stat-card h2 {
+    font-size: 17px;
+    color: var(--black);
+    margin-bottom: 7px;
+}
+
+.stat-card p {
+    font-size: 13px;
+    color: var(--black);
+    line-height: 1.6;
+}
+.globe {
+    font-size: 16px;
+    color: var(--black);
+    line-height: 1;
+}
+    
+
+
+
+
+
 @media (max-width: 991px) {
    .baczone-navbar {
       min-height: 80px;
@@ -2233,7 +2350,22 @@ img {
       white-space: normal;
       font-size: clamp(12px, 3.2vw, 14px);
    }
+  .testimonial {
+        padding: 30px;
+    }
 
+    .testimonial-content {
+        gap: 25px;
+    }
+
+    .stats {
+        width: 38%;
+        min-width: 220px;
+    }
+
+    .review h1 {
+        font-size: 23px;
+    }
 
 }
 
