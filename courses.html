@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BacZone</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="stylesheet/root.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <main>
+        <header class="baczone-header">
+    <nav class="navbar navbar-expand-lg baczone-navbar">
+        <div class="container-fluid navbar-container">
+
+            <!-- Logo -->
+            <div class="navbar-brand-area">
+                <a class="navbar-brand baczone-brand" href="#">
+                  
+
+                    <span class="material-symbols-outlined brand-icon">menu_book</span>
+                    <span class="brand-name">BacZone</span>
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#baczoneNavbar"
+                aria-controls="baczoneNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+           
+            <div class="collapse navbar-collapse" id="baczoneNavbar">
+
+               
+                <ul class="navbar-nav main-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    
+                    <li class="nav-item dropdown courses-dropdown">
+
+                        <button
+                            class="nav-link dropdown-toggle courses-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Courses
+                            <span class="material-symbols-outlined dropdown-icon">
+                                expand_more
+                            </span>
+                        </button>
+
+                        <div class="dropdown-menu mega-menu">
+
+                            <div class="mega-menu-grid">
+
+                                <div class="course-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">school</span>
+                                        <h4>1st Secondar</h4>
+                                    </div>
+
+                                    <ul>
+                                        <li><a href="courses.html">Arabic Language</a></li>
+                                        <li><a href="courses.html?category=English">English Language</a></li>
+                                        <li><a href="courses.html?category=Maths">Mathematics</a></li>
+                                        <li><a href="courses.html?category=Physics">Physics</a></li>
+                                        <li><a href="courses.html?category=Chemistry">Chemistry</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="course-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">workspace_premium</span>
+                                        <h4>2nd Secondary</h4>
+                                    </div>
+
+                                    <ul>
+                                     <li><a href="courses.html?grade=second">Arabic Language</a></li>
+                                     <li><a href="courses.html?category=English&grade=second">English Language</a></li>
+                                     <li><a href="courses.html?category=Maths&grade=second">Pure & Applied Math</a></li>
+                                     <li><a href="courses.html?category=Physics&grade=second">Physics</a></li>
+                                     <li><a href="courses.html?category=Chemistry&grade=second">Chemistry</a></li>
+                                    </ul>
+                                </div>
+
+                        
+                                <div class="course-column featured-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">military_tech</span>
+                                        <h4>3rd Thanawya</h4>
+                                    </div>
+
+                                  <ul>
+                                 <li><a href="courses.html?grade=third">Arabic Comprehensive</a></li>
+                                 <li><a href="courses.html?category=English&grade=third">English Advanced</a></li>
+                                  <li><a href="courses.html?category=Maths&grade=third">Calculus &amp; Algebra</a></li>
+                                    <li><a href="courses.html?category=Physics&grade=third">National Physics</a></li>
+                                  <li><a href="courses.html?category=Chemistry&grade=third">Organic Chemistry</a></li>
+                                  </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teachers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login / Register</a>
+                    </li>
+
+                </ul>
+
+                
+                <div class="navbar-actions">
+
+                    <a class="navbar-action"href="#"aria-label="Educational Books">
+                        <span class="material-symbols-outlined">auto_stories</span>
+                    </a>
+
+                    <a class="navbar-action cart-action" href="#" aria-label="Cart">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        
+                    </a>
+
+                    <span class="navbar-divider"></span>
+
+                    <a class="profile-link" href="#">
+                        <img src=""alt=""class="profile-image" >
+                        <span class="profile-name"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="courses-header">
+    <div class="courses-Path">
+        <div class="path-home">
+           
+            <a href="index.html"><i class="fa-solid fa-house"></i> home > </a>
+        </div>
+        <p>Courses > </p>
+        <p class="course-Grade"> First Secondary > </p>
+        <p class="course-Subject">Arabic</p>
+
+    </div>
+    <div class=" Syllabus-Aligned">
+        <div class=" Syllabus-Aligned-header">
+      <span class="material-symbols-outlined">verified</span>
+            <p> Syllabus Aligned with Egyptian Ministry of Education 2024/2025</p>
+        </div>
+        <p class="course-title">First Secondary — Arabic Language Faculty & Comprehensive Units </p>
+<div class="course-Description">
+    <div class="course-paragraph">
+        <p>Showing certified national instructors specializing in 1st Secondary Nahw parsing syntax, Balagha rhetorical metaphors, Adab history, and modern reading comprehension for the standardized tablet examinations. </p>
+    </div>
+    <div class="Certified-Teachers">
+     
+<p><span class="dot"></span> 7 Certified Teachers Found • 14 Active Units</p>
+     <p><i class="fa-solid fa-book-open"></i>General Thanawya Track</p>
+    </div>
+</div>
+    </div>
+</section>
+<section class="courses-carts">
+<div class="courses-carts-container">
+<div class="course-carts-header">
+  <div class="course-carts-header-path">
+    <div class="select-course">
+        <label for="select">Target Stage:</label>
+        <select id="select">
+            <option value="1st Secondary" class="one-st-Secondary">1st Secondary </option>
+             <option value="1st Secondary" class="two-st-Secondary">2st Secondary </option>
+              <option value="1st Secondary" class="th-st-Secondary">3rd Secondary Thanawya Amma </option>
+
+        </select>
+    </div>
+    <div class="shose-courses">
+        <ul class="shose-courses-item">
+            <li><a href="#" class="  course-link Arabic-item">Arabic Language</a></li>
+            <li><a href="#" class="  course-link  Mathematics-item">Mathematics</a></li>
+            <li><a href="#" class="course-link  Physics-item">Physics</a></li>
+            <li><a href="#" class="course-link  Chemistry-item">Chemistry</a></li>
+            <li><a href="#" class="course-link  English-item">English</a></li>
+            <li><a href="#" class="  course-link French-item">French</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="input-course">
+    <label for="search">search:</label>
+    <input class="input-course-search" type="text" id="search" placeholder="Search by teacher name, chapter, or revision unit (e.g. Mahmoud Shaker, Kāna & Akhawātuhā, Balagha)...">
+  </div>
+</div>
+</div>
+</section>
+
+<section class="courses-cards section">
+    <div class="courses-cards-container">
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-1.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">workspace_premium</i> Senior Arabic Inspector</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.95 (3,280)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Mahmoud Shaker</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">history_edu</i>Senior Arabic Inspector • 20 Years Exp. Specialized in 1st Secondary Nahw and Balagha.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-2.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">spellcheck</i> Grammar Specialist</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.87 (2,460)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Ahmed El-Sayed</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">menu_book</i>Arabic Language Specialist • 16 Years Exp. Focused on grammar, reading, and exam preparation.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-3.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">menu_book</i> Literature Expert</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.92 (1,890)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Mohamed Abdelrahman</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">auto_stories</i>Arabic Education Expert • 18 Years Exp. Specialized in literature, rhetoric, and Arabic grammar.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-4.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">school</i> Senior Arabic Teacher</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.89 (2,750)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Karim Hassan</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">menu_book</i>Senior Arabic Teacher • 15 Years Exp. Helps students master grammar and understand literary texts.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-5.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">auto_stories</i> Curriculum Expert</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.96 (4,120)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Amr Khaled</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">edit_note</i>Arabic Curriculum Expert • 17 Years Exp. Focused on writing skills, grammar, and exam techniques.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-6.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">cast_for_education</i> Arabic Instructor</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.91 (1,680)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Omar Mostafa</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">co_present</i>Arabic Language Instructor • 12 Years Exp. Specializes in grammar lessons and practical exercises.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-7.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">rule</i> Grammar Specialist</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.84 (2,310)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Youssef Adel</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">function</i>Arabic Grammar Specialist • 14 Years Exp. Makes complex grammar rules simple and easy to apply.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-8.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">military_tech</i> Senior Arabic Educator</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.93 (3,570)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Tarek Ibrahim</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">history_edu</i>Senior Arabic Educator • 19 Years Exp. Specializes in rhetoric, literature, and secondary-level revision.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-9.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">quiz</i> Exam Preparation Expert</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.79 (1,240)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Hossam Fathy</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">fact_check</i>Arabic Exam Preparation Expert • 11 Years Exp. Guides students through grammar and comprehension questions.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-10.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">psychology</i> Arabic Language Educator</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.97 (2,940)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Ms. Salma Ahmed</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">record_voice_over</i>Arabic Language Educator • 13 Years Exp. Specializes in literature, reading skills, and exam practice.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-11.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">edit_note</i> Grammar Teacher</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.88 (1,760)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Ms. Nour Mohamed</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">spellcheck</i>Arabic Grammar Teacher • 10 Years Exp. Helps students improve grammar, writing, and language analysis.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-12.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">history_edu</i> Literature Specialist</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.94 (2,080)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Ms. Menna Hassan</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">format_quote</i>Arabic Literature Specialist • 12 Years Exp. Focused on poetry, literary analysis, and rhetoric skills.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-13.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">library_books</i> Curriculum Instructor</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.86 (1,530)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Mostafa Samir</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">menu_book</i>Arabic Curriculum Instructor • 15 Years Exp. Teaches grammar, rhetoric, and effective exam strategies.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-14.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">workspace_premium</i> Senior Arabic Instructor</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.90 (2,670)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Mahmoud Adel</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">school</i>Senior Arabic Instructor • 16 Years Exp. Helps learners master literary texts and advanced grammar.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-15.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">translate</i> Language Specialist</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.99 (3,410)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Ms. Farida Khaled</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">translate</i>Arabic Language Specialist • 14 Years Exp. Focuses on grammar, reading comprehension, and literature.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-16.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">functions</i> Grammar Expert</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.82 (1,970)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Ali Ibrahim</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">calculate</i>Arabic Grammar Expert • 13 Years Exp. Specializes in sentence structure, syntax, and exam revision.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-17.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">lightbulb</i> Arabic Learning Specialist</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.93 (2,850)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Seif Ahmed</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">psychology</i>Arabic Learning Specialist • 12 Years Exp. Helps students strengthen grammar and literary understanding.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-18.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">record_voice_over</i> Arabic Language Teacher</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.76 (980)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Ziad Hassan</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">edit_note</i>Arabic Language Teacher • 9 Years Exp. Focused on reading, writing, and practical grammar exercises.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-19.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">verified</i> Education Specialist</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.91 (2,190)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Abdelrahman Mostafa</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">fact_check</i>Arabic Education Specialist • 14 Years Exp. Teaches rhetoric, grammar, and structured exam preparation.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="course-card-contact">
+            <div class="course-card">
+                <div class="course-card-images">
+                    <img src="image/Arabic-20.jpg" alt="" class="card-image">
+                </div>
+                <div class="Textbook"><p><i class="material-symbols-outlined">military_tech</i> Distinguished  Teacher</p></div>
+                <div class="star"><p><i class="material-symbols-outlined">star</i> 4.85 (1,450)</p></div>
+                <div class="course-card-text">
+                    <h4 class="ms-name-arabic">Mr. Hassan Mahmoud</h4>
+                    <p class="ms-Description-arabic">
+                        <i class="material-symbols-outlined">school</i>Senior Arabic Teacher • 11 Years Exp. Specializes in language fundamentals and secondary exam revision.
+                    </p>
+                    <div class="show-cards">
+                        <button>Explore Courses <i class="material-symbols-outlined">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
