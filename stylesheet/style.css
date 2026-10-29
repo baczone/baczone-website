@@ -2215,8 +2215,7 @@ box-shadow: 0 0 10px var(--dark-blue);
    text-align: center;
 }
 .course-title{
-   width: 450px;
-   font-size: 19px;
+
    width: clamp(300px,35.1vw,500px);
    font-size: clamp(15px,1.4vw,25px);
 }
