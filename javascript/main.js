@@ -147,9 +147,9 @@ let Maths = [
     },
     {
         image: "image/math-2.jpg",
-        name: "Mariam Adel",
+        name: "saad Adel",
         Textbook: '<i class="material-symbols-outlined">functions</i> Algebra Practice',
-        Description: '<i class="material-symbols-outlined">calculate</i> Mathematics Instructor • 12 Years Exp. Specialized in Algebraic Expressions and Functions.',
+        Description: '<i class="material-symbols-outlined">calculate</i> Mathematics Instructor • 12 Years Exp. Specialized in Algebraic Expression,Functions.',
     },
     {
         image: "image/math-3.jpg",
@@ -171,7 +171,7 @@ let Maths = [
     },
     {
         image: "image/math-6.jpg",
-        name: "Farida Mohamed",
+        name: "sayed Mohamed",
         Textbook: '<i class="material-symbols-outlined">trending_up</i> Calculus Basics',
         Description: '<i class="material-symbols-outlined">trending_up</i> Calculus Instructor • 9 Years Exp. Specialized in Limits and Basic Differentiation.',
     },
@@ -183,7 +183,7 @@ let Maths = [
     },
     {
         image: "image/math-8.jpg",
-        name: "Salma Ahmed",
+        name: "Salama Ahmed",
         Textbook: '<i class="material-symbols-outlined">query_stats</i> Statistics Basics',
         Description: '<i class="material-symbols-outlined">query_stats</i> Statistics Teacher • 8 Years Exp. Specialized in Data Analysis and Probability.',
     },
@@ -191,11 +191,11 @@ let Maths = [
         image: "image/math-9.jpg",
         name: "Karim Adel",
         Textbook: '<i class="material-symbols-outlined">square_foot</i> Trigonometry Lessons',
-        Description: '<i class="material-symbols-outlined">square_foot</i> Mathematics Expert • 7 Years Exp. Specialized in Trigonometric Rules and Applications.',
+        Description: '<i class="material-symbols-outlined">square_foot</i> Mathematics Expert • 7 Years Exp. Specialized in Trigonometric  Applications.',
     },
     {
         image: "image/math-10.jpg",
-        name: "Jana Hassan",
+        name: "aboda Hassan",
         Textbook: '<i class="material-symbols-outlined">grid_on</i> Coordinate Geometry',
         Description: '<i class="material-symbols-outlined">grid_on</i> Geometry Instructor • 10 Years Exp. Specialized in Coordinates, Lines and Curves.',
     },
@@ -207,7 +207,7 @@ let Maths = [
     },
     {
         image: "image/math-12.jpg",
-        name: "Habiba Tarek",
+        name: "smair Tarek",
         Textbook: '<i class="material-symbols-outlined">monitoring</i> Mathematical Analysis',
         Description: '<i class="material-symbols-outlined">monitoring</i> Advanced Math Teacher • 12 Years Exp. Specialized in Mathematical Analysis and Functions.',
     },
@@ -219,7 +219,7 @@ let Maths = [
     },
     {
         image: "image/math-14.jpg",
-        name: "Aya Mostafa",
+        name: "omar Mostafa",
         Textbook: '<i class="material-symbols-outlined">change_history</i> Geometric Proofs',
         Description: '<i class="material-symbols-outlined">change_history</i> Geometry Specialist • 9 Years Exp. Specialized in Geometric Proofs and Theorems.',
     },
@@ -231,7 +231,7 @@ let Maths = [
     },
     {
         image: "image/math-16.jpg",
-        name: "Malak Samir",
+        name: "Malek Samir",
         Textbook: '<i class="material-symbols-outlined">show_chart</i> Graph Interpretation',
         Description: '<i class="material-symbols-outlined">show_chart</i> Math Instructor • 10 Years Exp. Specialized in Graphs, Relations and Functions.',
     },
@@ -243,9 +243,9 @@ let Maths = [
     },
     {
         image: "image/math-18.jpg",
-        name: "Menna Khaled",
+        name: " tariq Khaled",
         Textbook: '<i class="material-symbols-outlined">query_stats</i> Probability Practice',
-        Description: '<i class="material-symbols-outlined">query_stats</i> Statistics Instructor • 14 Years Exp. Specialized in Probability and Statistical Problems.',
+        Description: '<i class="material-symbols-outlined">query_stats</i> Statistics Instructor • 14 Years Exp. Specialized in Probability and Statistical .',
     },
 ];
 let Physics = [
@@ -541,4 +541,14 @@ if (grade === "first") {
     course_Grade.innerHTML = "Second Secondary >";
 } else if (grade === "third") {
     course_Grade.innerHTML = "Third Secondary >";
+}
+
+let course_links = document.querySelectorAll(".course-link");
+
+for (let i = 0; i < course_links.length; i++) {
+    let url = new URL(course_links[i].href);
+
+    url.searchParams.set("grade", grade);
+
+    course_links[i].href = url.href;
 }

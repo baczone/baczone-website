@@ -2319,7 +2319,7 @@ gap: 20px;
 }
 .course-card{
  background-color: var(--white); 
-   width:clamp(250px,31.25vw,450px);
+   width:clamp(340px,31.25vw,450px);
    height: auto;
    position: relative;
    border: 1px solid #e5e7eb;
@@ -2345,7 +2345,10 @@ background-color:  #EBEDFF;
 background-color: var(--pink);
    border-radius: 10px 10px;
    border: 1px solid  var(--pink);
+   
+  font-size:clamp(12px,1.09vw,19px);
 }
+
 .courses-cards-container a{
    text-decoration: none;
    color: black;
@@ -2354,7 +2357,7 @@ background-color: var(--pink);
    box-shadow: 0 0 10px var(--dark-blue);
 }
 .course-card-images .card-image{
-   width:clamp(250px,31.25vw,400px);
+   width:clamp(340px,31.25vw,400px);
    border-radius: 10px 10px 0 0;
    height: clamp(200px,23.43vw,350px);
    
@@ -2389,7 +2392,42 @@ transition: 0.5s;
 .course-card-text{
    padding: 15px 10px;
 }
+main{
+   position: relative;
+}
+.book-fixed{
+   text-decoration: none;
+   position: fixed;
+   z-index: 1999;
+   bottom: 2%;
+   border: 1px solid #E8DDFA;
+   padding: 6px 10px;
+   border-radius: 50%;
+   background-color: #E8DDFA;
+   left: 2%;
+   animation: cricle 2s infinite;
+}
+@keyframes  cricle{
+0% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(91, 99, 120, 0.25);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 10px 35px rgba(140, 124, 168, 0.7), 0 0 20px rgba(232, 221, 250, 0.6);
+  }
+  100% {
+   
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(91, 99, 120, 0.25);
+  }
+}
+.book-fixed i {
+   font-size: 50px;
+   font-size: clamp(30px,3.9vw,70px);
+   color: var(--dark-blue);
 
+}
 @media (max-width: 991px) {
    .baczone-navbar {
       min-height: 80px;
@@ -2925,7 +2963,12 @@ transition: 0.5s;
 .select-course{
   padding-left: 50px;
 }
-
+.show-cards button{
+   padding: 0px 0px;
+}
+.courses-cards{
+   padding-left:25px ;
+}
 }
 
 @media (max-width: 600px) {
