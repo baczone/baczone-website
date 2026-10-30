@@ -2210,14 +2210,14 @@ box-shadow: 0 0 10px var(--dark-blue);
    color: rgb(108 97 107 / var(--tw-text-opacity, 1));
    border-radius: 20px 20px;
    width: clamp(300px,42.9vw,580px);
-   height: 30px;
-
+   justify-content: center;
+   align-items: center;
 }
 .Syllabus-Aligned-header span{
    padding-top: 2px;
 }
 .Syllabus-Aligned-header p{
-   text-align: center;
+   margin: 0;
 }
 .course-title{
 
@@ -2260,13 +2260,11 @@ box-shadow: 0 0 10px var(--dark-blue);
    min-height: 40vh;
  background-color:rgb(250 248 255 / var(--tw-bg-opacity, 1));
 }
-
 .course-carts-header input{
    margin-top: 25px;
    width: 91%;
 }
-select,.input-course-search ,.input-book-search{
-  
+select,.input-course-search ,.input-book-search{ 
    height: 40px;
    border-radius: 10px 10px;
    outline: none;
@@ -2291,15 +2289,12 @@ display: inline-block;
 transition: 0.5s;
 }
 .shose-courses-item li:first-child .course-link{
-  
    border: 1px solid rgb(237 222 234 / var(--tw-bg-opacity, 1)) ;
    background-color:rgb(237 222 234 / var(--tw-bg-opacity, 1));
-
 }
 .shose-courses-item .course-link:hover{
    color: var(--black);
 }
-
 .course-carts-header-path{
    display: flex;
 }
@@ -2337,7 +2332,7 @@ gap: 20px;
    left: 2%;
    height: 30px;
    color: var(--black);
-background-color:  #EBEDFF;
+   background-color:  #EBEDFF;
    border-radius: 10px 10px;
    border: 1px solid  #EBEDFF;
 }
@@ -2350,7 +2345,6 @@ background-color:  #EBEDFF;
 background-color: var(--pink);
    border-radius: 10px 10px;
    border: 1px solid  var(--pink);
-   
   font-size:clamp(12px,1.09vw,19px);
 }
 

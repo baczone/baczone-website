@@ -533,7 +533,16 @@ else{
 }
 let params = new URLSearchParams(window.location.search);
 let grade = params.get("grade");
+let book_fixed = document.querySelector(".book-fixed");
 
+if (book_fixed) {
+    if (category === "Arabic") {
+        book_fixed.href = `book.html?grade=${grade}&category=Arabic`;
+    } 
+    else if (category === "English") {
+        book_fixed.href = `book.html?grade=${grade}&category=English`;
+    }
+}
 
 
 let course_Grade = document.querySelector(".course-Grade");
@@ -556,96 +565,279 @@ for (let i = 0; i < course_links.length; i++) {
     course_links[i].href = url.href;
 }
 }
+
+
+let book_cards = document.querySelectorAll(".card-book");
+let search_book_input = document.querySelector(".input-book-search");
+
+if(book_cards.length > 0 && search_book_input){
+    search_book_input.addEventListener("input", function () {
+        for (let book = 0; book < book_cards.length; book++) {
+            let teacher = book_cards[book].querySelector("h4");
+            let teacher_name_book = teacher.innerHTML.trim().toLowerCase();
+
+            if (teacher_name_book.includes(search_book_input.value.trim().toLowerCase())) {
+                book_cards[book].style.display = "block";
+            } else {
+                book_cards[book].style.display = "none";
+            }
+        }
+    });
+}
 let arabic_sec2 = [
     {
         imageBook: "image/arabic-book-sec-2-1.jpg",
         book_pargraph: "Al-Manar in Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "230 EGP",
+        des_book: "260 EGP",
     },
     {
         imageBook: "image/arabic-book-sec-2-2.jpg",
         book_pargraph: "A Complete Guide to Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "220 EGP",
+        des_book: "245 EGP",
     },
     {
         imageBook: "image/arabic-book-sec-2-3.jpg",
         book_pargraph: "Mastering Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "225 EGP",
+        des_book: "280 EGP",
     },
     {
         imageBook: "image/arabic-book-sec-2-4.jpg",
         book_pargraph: "The Essential Arabic Grammar & Morphology Guide (2025 Edition)",
+        price_book: "180 EGP",
+        des_book: "230 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-5.jpg",
         book_pargraph: "Advanced Lessons in Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "200 EGP",
+        des_book: "250 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-6.jpg",
         book_pargraph: "A Complete Study of Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "215 EGP",
+        des_book: "270 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-7.jpg",
         book_pargraph: "The Ultimate Guide to Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "190 EGP",
+        des_book: "240 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-8.jpg",
         book_pargraph: "Comprehensive Arabic Grammar & Morphology Lessons (2025 Edition)",
+        price_book: "235 EGP",
+        des_book: "290 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-9.jpg",
         book_pargraph: "A Practical Guide to Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "205 EGP",
+        des_book: "255 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-10.jpg",
         book_pargraph: "Detailed Lessons in Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "220 EGP",
+        des_book: "275 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-11.jpg",
         book_pargraph: "The Complete Arabic Grammar & Morphology Course (2025 Edition)",
+        price_book: "185 EGP",
+        des_book: "235 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-12.jpg",
         book_pargraph: "A Comprehensive Guide to Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "230 EGP",
+        des_book: "285 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-13.jpg",
         book_pargraph: "Essential Lessons in Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "195 EGP",
+        des_book: "250 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-14.jpg",
         book_pargraph: "A Detailed Guide to Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "215 EGP",
+        des_book: "265 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-15.jpg",
         book_pargraph: "Complete Training in Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "240 EGP",
+        des_book: "300 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-16.jpg",
         book_pargraph: "A Structured Guide to Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "175 EGP",
+        des_book: "225 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-17.jpg",
         book_pargraph: "Expert Lessons in Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "250 EGP",
+        des_book: "310 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-18.jpg",
         book_pargraph: "A Full Review of Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "205 EGP",
+        des_book: "260 EGP",
     },
     {
         imageBook: "image/arabic-sec-2-19.jpg",
         book_pargraph: "The Complete Reference for Arabic Grammar & Morphology (2025 Edition)",
+        price_book: "245 EGP",
+        des_book: "305 EGP",
+    },
+];
+
+let arabic_sec3 = [
+    {
+        imageBook: "image/arabic-book-sec-3-1.jpg",
+        book_pargraph: "Al-Tafawoq in Advanced Arabic Grammar & Literature (2025 Edition)",
+        price_book: "280 EGP",
+        des_book: "350 EGP",
+    },
+    {
+        imageBook: "image/arabic-book-sec-3-2.jpg",
+        book_pargraph: "A Complete Guide to Advanced Arabic Grammar & Rhetoric (2025 Edition)",
+        price_book: "260 EGP",
+        des_book: "325 EGP",
+    },
+    {
+        imageBook: "image/arabic-book-sec-3-3.jpg",
+        book_pargraph: "Mastering Advanced Arabic Grammar & Literary Analysis (2025 Edition)",
+        price_book: "295 EGP",
+        des_book: "370 EGP",
+    },
+    {
+        imageBook: "image/arabic-book-sec-3-4.jpg",
+        book_pargraph: "The Essential Advanced Arabic Grammar & Literature Guide (2025 Edition)",
+        price_book: "275 EGP",
+        des_book: "340 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-5.jpg",
+        book_pargraph: "Advanced Preparation in Arabic Grammar & Literature (2025 Edition)",
+        price_book: "310 EGP",
+        des_book: "390 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-6.jpg",
+        book_pargraph: "A Complete Study of Advanced Arabic Grammar & Rhetoric (2025 Edition)",
+        price_book: "285 EGP",
+        des_book: "355 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-7.jpg",
+        book_pargraph: "The Ultimate Guide to Arabic Grammar & Literary Analysis (2025 Edition)",
+        price_book: "250 EGP",
+        des_book: "315 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-8.jpg",
+        book_pargraph: "Comprehensive Arabic Grammar & Literature Revision Lessons (2025 Edition)",
+        price_book: "300 EGP",
+        des_book: "375 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-9.jpg",
+        book_pargraph: "A Practical Guide to Advanced Arabic Grammar & Literature (2025 Edition)",
+        price_book: "270 EGP",
+        des_book: "335 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-10.jpg",
+        book_pargraph: "Detailed Preparation in Arabic Grammar & Literary Analysis (2025 Edition)",
+        price_book: "290 EGP",
+        des_book: "360 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3.11.jpg",
+        book_pargraph: "The Complete Arabic Grammar & Literature Revision Course (2025 Edition)",
+        price_book: "320 EGP",
+        des_book: "400 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3.12.jpg",
+        book_pargraph: "A Comprehensive Guide to Arabic Literature & Rhetoric (2025 Edition)",
+        price_book: "265 EGP",
+        des_book: "330 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3.13.jpg",
+        book_pargraph: "Essential Lessons in Advanced Arabic Grammar & Literature (2025 Edition)",
+        price_book: "305 EGP",
+        des_book: "380 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3.14.jpg",
+        book_pargraph: "A Detailed Guide to Arabic Grammar & Final Exam Preparation (2025 Edition)",
+        price_book: "285 EGP",
+        des_book: "350 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3.15.jpg",
+        book_pargraph: "Complete Training in Arabic Grammar & Literary Analysis (2025 Edition)",
+        price_book: "315 EGP",
+        des_book: "395 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-16.jpg",
+        book_pargraph: "A Structured Guide to Advanced Arabic Grammar & Rhetoric (2025 Edition)",
+        price_book: "255 EGP",
+        des_book: "320 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-17.jpg",
+        book_pargraph: "Expert Lessons in Arabic Literature & Grammar Revision (2025 Edition)",
+        price_book: "295 EGP",
+        des_book: "365 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-18.jpg",
+        book_pargraph: "A Full Review of Advanced Arabic Grammar & Literature (2025 Edition)",
+        price_book: "275 EGP",
+        des_book: "345 EGP",
+    },
+    {
+        imageBook: "image/arabic-sec-3-19.jpg",
+        book_pargraph: "The Complete Reference for Arabic Grammar & Exam Preparation (2025 Edition)",
+        price_book: "325 EGP",
+        des_book: "410 EGP",
     },
 ];
 let card_book = document.querySelectorAll(".card-book");
 
 function showbook(books) {
     for (let book = 0; book < books.length && book < card_book.length; book++) {
-        let imageBook = card_book[book].querySelector(".image-book");
+        let imageBook = document.querySelectorAll(".image-book")[book];
         imageBook.src = books[book].imageBook;
 
-        let name_teacher_book = card_book[book].querySelector(".name-teacher-book");
-        name_teacher_book.innerHTML = books[book].name_book || "";
+        let name_teacher_book = document.querySelectorAll(".name-teacher-book")[book];
 
-        let card_book_pargraph = card_book[book].querySelector(".card-book-pargraph");
+        if (books[book].name_book !== undefined) {
+            name_teacher_book.innerHTML = books[book].name_book;
+        }
+
+        let card_book_pargraph = document.querySelectorAll(".card-book-pargraph")[book];
         card_book_pargraph.innerHTML = books[book].book_pargraph;
+
+        let price_book_cart = document.querySelectorAll(".price-book")[book];
+        price_book_cart.innerHTML = books[book].price_book;
+
+        let des_book_cart = document.querySelectorAll(".des-book")[book];
+        des_book_cart.innerHTML = books[book].des_book;
     }
 }
 
@@ -656,4 +848,8 @@ let book_category = books_book.get("category") || "Arabic";
 
 if (book_grade === "second" && book_category === "Arabic") {
     showbook(arabic_sec2);
+}else if(book_grade === "third" && book_category === "Arabic"){
+    showbook(arabic_sec3);
+}else{
+
 }
