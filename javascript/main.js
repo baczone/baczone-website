@@ -457,6 +457,7 @@ let Chemistry = [
     },
 
 ];
+if(course_card_contact){
 function showcart(carts) {
     for (let cart = 0; cart < carts.length; cart++) {
 
@@ -551,4 +552,5 @@ for (let i = 0; i < course_links.length; i++) {
     url.searchParams.set("grade", grade);
 
     course_links[i].href = url.href;
+}
 }
