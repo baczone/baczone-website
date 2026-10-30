@@ -2,7 +2,7 @@
 let course_card_contact = document.querySelectorAll(".course-card-contact");
 let input_course_search = document.querySelector(".input-course-search");
 
-if(course_card_contact){
+if(course_card_contact.length > 0 && input_course_search){
 input_course_search.addEventListener("input", function () {
     for (let search = 0; search < course_card_contact.length; search++) {
         let name = course_card_contact[search].querySelector("h4");
@@ -457,7 +457,7 @@ let Chemistry = [
     },
 
 ];
-if(course_card_contact){
+if(course_card_contact.length > 0){
 function showcart(carts) {
     for (let cart = 0; cart < carts.length; cart++) {
 
@@ -534,6 +534,8 @@ else{
 let params = new URLSearchParams(window.location.search);
 let grade = params.get("grade");
 
+
+
 let course_Grade = document.querySelector(".course-Grade");
 
 if (grade === "first") {
@@ -553,4 +555,105 @@ for (let i = 0; i < course_links.length; i++) {
 
     course_links[i].href = url.href;
 }
+}
+let arabic_sec2 = [
+    {
+        imageBook: "image/arabic-book-sec-2-1.jpg",
+        book_pargraph: "Al-Manar in Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-book-sec-2-2.jpg",
+        book_pargraph: "A Complete Guide to Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-book-sec-2-3.jpg",
+        book_pargraph: "Mastering Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-book-sec-2-4.jpg",
+        book_pargraph: "The Essential Arabic Grammar & Morphology Guide (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-5.jpg",
+        book_pargraph: "Advanced Lessons in Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-6.jpg",
+        book_pargraph: "A Complete Study of Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-7.jpg",
+        book_pargraph: "The Ultimate Guide to Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-8.jpg",
+        book_pargraph: "Comprehensive Arabic Grammar & Morphology Lessons (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-9.jpg",
+        book_pargraph: "A Practical Guide to Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-10.jpg",
+        book_pargraph: "Detailed Lessons in Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-11.jpg",
+        book_pargraph: "The Complete Arabic Grammar & Morphology Course (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-12.jpg",
+        book_pargraph: "A Comprehensive Guide to Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-13.jpg",
+        book_pargraph: "Essential Lessons in Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-14.jpg",
+        book_pargraph: "A Detailed Guide to Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-15.jpg",
+        book_pargraph: "Complete Training in Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-16.jpg",
+        book_pargraph: "A Structured Guide to Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-17.jpg",
+        book_pargraph: "Expert Lessons in Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-18.jpg",
+        book_pargraph: "A Full Review of Arabic Grammar & Morphology (2025 Edition)",
+    },
+    {
+        imageBook: "image/arabic-sec-2-19.jpg",
+        book_pargraph: "The Complete Reference for Arabic Grammar & Morphology (2025 Edition)",
+    },
+];
+let card_book = document.querySelectorAll(".card-book");
+
+function showbook(books) {
+    for (let book = 0; book < books.length && book < card_book.length; book++) {
+        let imageBook = card_book[book].querySelector(".image-book");
+        imageBook.src = books[book].imageBook;
+
+        let name_teacher_book = card_book[book].querySelector(".name-teacher-book");
+        name_teacher_book.innerHTML = books[book].name_book || "";
+
+        let card_book_pargraph = card_book[book].querySelector(".card-book-pargraph");
+        card_book_pargraph.innerHTML = books[book].book_pargraph;
+    }
+}
+
+let books_book = new URLSearchParams(window.location.search);
+
+let book_grade = books_book.get("grade");
+let book_category = books_book.get("category") || "Arabic";
+
+if (book_grade === "second" && book_category === "Arabic") {
+    showbook(arabic_sec2);
 }

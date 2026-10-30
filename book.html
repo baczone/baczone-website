@@ -17,14 +17,157 @@
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 <body>
+    <main>
+                <header class="baczone-header">
+    <nav class="navbar navbar-expand-lg baczone-navbar">
+        <div class="container-fluid navbar-container">
+
+            <!-- Logo -->
+            <div class="navbar-brand-area">
+                <a class="navbar-brand baczone-brand" href="#">
+                  
+
+                    <span class="material-symbols-outlined brand-icon">menu_book</span>
+                    <span class="brand-name">BacZone</span>
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#baczoneNavbar"
+                aria-controls="baczoneNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+           
+            <div class="collapse navbar-collapse" id="baczoneNavbar">
+
+               
+                <ul class="navbar-nav main-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    
+                    <li class="nav-item dropdown courses-dropdown">
+
+                        <button
+                            class="nav-link dropdown-toggle courses-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Courses
+                            <span class="material-symbols-outlined dropdown-icon">
+                                expand_more
+                            </span>
+                        </button>
+
+                        <div class="dropdown-menu mega-menu">
+
+                            <div class="mega-menu-grid">
+
+                                <div class="course-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">school</span>
+                                        <h4>1st Secondar</h4>
+                                    </div>
+
+                                    <ul>
+                                        <li><a href="courses.html">Arabic Language</a></li>
+                                        <li><a href="courses.html?category=English">English Language</a></li>
+                                        <li><a href="courses.html?category=Maths">Mathematics</a></li>
+                                        <li><a href="courses.html?category=Physics">Physics</a></li>
+                                        <li><a href="courses.html?category=Chemistry">Chemistry</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="course-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">workspace_premium</span>
+                                        <h4>2nd Secondary</h4>
+                                    </div>
+
+                                    <ul>
+                                     <li><a href="courses.html?grade=second">Arabic Language</a></li>
+                                     <li><a href="courses.html?category=English&grade=second">English Language</a></li>
+                                     <li><a href="courses.html?category=Maths&grade=second">Pure & Applied Math</a></li>
+                                     <li><a href="courses.html?category=Physics&grade=second">Physics</a></li>
+                                     <li><a href="courses.html?category=Chemistry&grade=second">Chemistry</a></li>
+                                    </ul>
+                                </div>
+
+                        
+                                <div class="course-column featured-column">
+                                    <div class="course-heading">
+                                        <span class="material-symbols-outlined">military_tech</span>
+                                        <h4>3rd Thanawya</h4>
+                                    </div>
+
+                                  <ul>
+                                 <li><a href="courses.html?grade=third">Arabic Comprehensive</a></li>
+                                 <li><a href="courses.html?category=English&grade=third">English Advanced</a></li>
+                                  <li><a href="courses.html?category=Maths&grade=third">Calculus &amp; Algebra</a></li>
+                                    <li><a href="courses.html?category=Physics&grade=third">National Physics</a></li>
+                                  <li><a href="courses.html?category=Chemistry&grade=third">Organic Chemistry</a></li>
+                                  </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teachers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login / Register</a>
+                    </li>
+
+                </ul>
+
+                
+                <div class="navbar-actions">
+
+                    <a class="navbar-action"href="#"aria-label="Educational Books">
+                        <span class="material-symbols-outlined">auto_stories</span>
+                    </a>
+
+                    <a class="navbar-action cart-action" href="#" aria-label="Cart">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        
+                    </a>
+
+                    <span class="navbar-divider"></span>
+
+                   
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
     <section class="courses-header">
     <div class="courses-Path">
         <div class="path-home"> 
             <a href="index.html"><i class="fa-solid fa-house"></i> home > </a>
         </div>
-        <p>Courses > </p>
-        <p class="course-Grade"> First Secondary > </p>
-        <p class="course-Subject">Arabic</p>
+        <p>book > </p>
+        <p class="course-Grade-book"> First Secondary > </p>
+        <p class="course-books">Arabic</p>
 
     </div>
     <div class=" Syllabus-Aligned">
@@ -60,23 +203,524 @@
     </div>
     <div class="shose-courses">
         <ul class="shose-courses-item">
-            <li><a href="#" class="  course-link Arabic-item">Arabic Language</a></li>
-            <li><a href="#" class="  course-link  Mathematics-item">Mathematics</a></li>
-            <li><a href="#" class="course-link  Physics-item">Physics</a></li>
-            <li><a href="#" class="course-link  Chemistry-item">Chemistry</a></li>
-            <li><a href="#" class="course-link  English-item">English</a></li>
-            <li><a href="#" class="  course-link French-item">French</a></li>
+            <li><a href="#" class="  course-book Arabic-item">Arabic Language</a></li>
+            <li><a href="#" class="  course-book  Mathematics-item">Mathematics</a></li>
+            <li><a href="#" class="course-book Physics-item">Physics</a></li>
+            <li><a href="#" class="course-book  Chemistry-item">Chemistry</a></li>
+            <li><a href="#" class="course-book  English-item">English</a></li>
+            <li><a href="#" class="  course-book French-item">French</a></li>
         </ul>
     </div>
   </div>
   <div class="input-course">
     <label for="search">search:</label>
-    <input class="input-course-search" type="text" id="search" placeholder="Search by teacher name, chapter, or revision unit (e.g. Mahmoud Shaker, Kāna & Akhawātuhā, Balagha)...">
+    <input class="input-book-search" type="text" id="search" placeholder="Search by book title, author, subject, or keyword (e.g. Al-Manar, Physics, Mathematics)...">
   </div>
 </div>
 </div>
 </section>
 
+<section class="cards-books section">
+    <div class="cart-books">
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-book-sec-1-1.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Mahmoud Shaker</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Manar in Arabic Grammar & Morphology (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>380 Pages • Complete Answer Key Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">210 EGP</h5>
+                        <del class="des-book">260 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-book-sec-1-2.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Ahmed El-Sayed</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Motamayez in Arabic Grammar & Reading (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>420 Pages • Grammar Exercises Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">195 EGP</h5>
+                        <del class="des-book">245 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-book-sec-1-3.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Mohamed Abdelrahman</h4>
+                </div>
+                <p class="card-book-pargraph">The Guide to Arabic Literature & Rhetoric (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>360 Pages • Literature Notes Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">225 EGP</h5>
+                        <del class="des-book">275 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-book-sec-1-4.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Karim Hassan</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Tafawoq in Arabic Grammar & Language Skills (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>400 Pages • Model Exams Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">200 EGP</h5>
+                        <del class="des-book">250 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-5.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Amr Khaled</h4>
+                </div>
+                <p class="card-book-pargraph">The Complete Arabic Curriculum Review (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>390 Pages • Full Revision Guide Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">230 EGP</h5>
+                        <del class="des-book">280 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-6.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Omar Mostafa</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Moaser in Arabic Grammar & Exercises (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>410 Pages • Practice Questions Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">185 EGP</h5>
+                        <del class="des-book">235 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-7.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Youssef Adel</h4>
+                </div>
+                <p class="card-book-pargraph">The Smart Guide to Arabic Grammar & Syntax (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>370 Pages • Detailed Answer Key Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">215 EGP</h5>
+                        <del class="des-book">265 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-8.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Tarek Ibrahim</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Emtehan in Arabic Literature & Rhetoric (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>430 Pages • Final Exam Review Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">240 EGP</h5>
+                        <del class="des-book">290 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1.9.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Hossam Fathy</h4>
+                </div>
+                <p class="card-book-pargraph">The Final Review in Arabic Grammar & Reading (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>350 Pages • Reading Exercises Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">190 EGP</h5>
+                        <del class="des-book">240 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1.10.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Ms. Salma Ahmed</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Motafawq in Arabic Language & Literature (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>390 Pages • Complete Practice Tests Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">220 EGP</h5>
+                        <del class="des-book">270 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1.11.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Ms. Nour Mohamed</h4>
+                </div>
+                <p class="card-book-pargraph">The Essential Guide to Arabic Grammar & Writing (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>380 Pages • Writing Skills Guide Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">205 EGP</h5>
+                        <del class="des-book">255 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-12.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Ms. Menna Hassan</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Nokhba in Arabic Literature & Poetry (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>420 Pages • Poetry Analysis Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">235 EGP</h5>
+                        <del class="des-book">285 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-13.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Mostafa Samir</h4>
+                </div>
+                <p class="card-book-pargraph">The Expert Book in Arabic Grammar & Rhetoric (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>400 Pages • Grammar Review Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">195 EGP</h5>
+                        <del class="des-book">245 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-14.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Mahmoud Adel</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Moalem in Arabic Language & Exam Practice (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>360 Pages • Exam Strategies Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">225 EGP</h5>
+                        <del class="des-book">275 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-15.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Ms. Mamdouh Ahmed</h4>
+                </div>
+                <p class="card-book-pargraph">The Excellence Guide to Arabic Grammar & Reading (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>410 Pages • Full Answer Guide Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">210 EGP</h5>
+                        <del class="des-book">260 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-16.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. salma mohmed</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Qema in Arabic Syntax & Language Skills (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>370 Pages • Syntax Exercises Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">200 EGP</h5>
+                        <del class="des-book">250 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-17.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Ali Ibrahim</h4>
+                </div>
+                <p class="card-book-pargraph">The Complete Course in Arabic Grammar & Literature (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>430 Pages • Literature Review Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">245 EGP</h5>
+                        <del class="des-book">295 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-18.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Ziad Hassan</h4>
+                </div>
+                <p class="card-book-pargraph">Al-Ebdaa in Arabic Reading & Rhetoric (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>380 Pages • Reading Practice Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">185 EGP</h5>
+                        <del class="des-book">235 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-book">
+            <div class="card-book-iamge">
+                <img src="image/arabic-sec-1-19.jpg" class="image-book" alt="">
+            </div>
+            <div class="book-text">
+                <div class="name-teacher-books">
+                    <h4 class="name-teacher-book">Mr. Ahmed Morad</h4>
+                </div>
+                <p class="card-book-pargraph">The Topper in Arabic Grammar & Exam Preparation (2025 Edition)</p>
+                <div class="card-book-description">
+                    <i class="material-symbols-outlined">menu_book</i>
+                    <p>400 Pages • Model Answers Included</p>
+                </div>
+                <div class="card-book-price">
+                    <div class="prices-books">
+                        <h5 class="price-book">230 EGP</h5>
+                        <del class="des-book">280 EGP</del>
+                    </div>
+                    <div class="shop-books">
+                        <i class="material-symbols-outlined">shopping_bag</i>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/main.js"></script>
 </body>

@@ -1,3 +1,4 @@
+
 .baczone-header {
    position: fixed;
    top: 0;
@@ -10,18 +11,21 @@
 }
 
 .baczone-navbar {
-   min-height: clamp(70px, 5.6vw, 80px);
-   padding: 0;
+   min-height: 60px;
+   height: 40px;
+   padding: 45px;
 }
 
 .navbar-container {
    width: 100%;
    max-width: none;
+   height: 40px;
+   min-height: 40px;
    padding: 0 10px;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   gap: clamp(10px, 1.25vw, 18px);
+   gap: 10px;
 }
 
 .navbar-brand-area {
@@ -31,7 +35,7 @@
 .baczone-brand {
    display: flex;
    align-items: center;
-   gap: clamp(5px, 0.55vw, 8px);
+   gap: 5px;
    margin: 0;
    padding: 0;
    color: var(--dark-blue);
@@ -40,17 +44,17 @@
 
 .brand-logo {
    width: auto;
-   height: clamp(26px, 2.25vw, 32px);
+   height: 22px;
    object-fit: contain;
 }
 
 .brand-icon {
    color: var(--purple-gray);
-   font-size: clamp(23px, 1.9vw, 27px);
+   font-size: 19px;
 }
 
 .brand-name {
-   font-size: clamp(20px, 1.7vw, 24px);
+   font-size: 17px;
    font-weight: 600;
    letter-spacing: -0.5px;
    white-space: nowrap;
@@ -70,21 +74,21 @@
    flex: 1;
    align-items: center;
    justify-content: center;
-   gap: clamp(8px, 0.85vw, 12px);
-   margin: 0 clamp(6px, 0.85vw, 12px);
+   gap: 5px;
+   margin: 0 6px;
 }
 
 .main-nav .nav-link {
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: clamp(3px, 0.35vw, 5px);
-   padding: clamp(8px, 0.85vw, 12px) clamp(7px, 0.7vw, 10px);
+   gap: 3px;
+   padding: 5px 7px;
    border: none;
    border-radius: 8px;
    background: transparent;
    color: var(--text-gray);
-   font-size: clamp(15px, 1.2vw, 17px);
+   font-size: 19px;
    font-weight: 600;
    text-decoration: none;
    white-space: nowrap;
@@ -108,7 +112,7 @@
 }
 
 .dropdown-icon {
-   font-size: clamp(16px, 1.35vw, 19px);
+   font-size: 15px;
    transition: transform 0.2s ease;
 }
 
@@ -128,7 +132,7 @@
    left: 55%;
    width: clamp(600px, 58vw, 760px);
    margin: 0;
-   padding: clamp(8px, 0.85vw, 12px) 0 0;
+   padding: 8px 0 0;
    border: none;
    border-radius: 0;
    background: transparent;
@@ -150,7 +154,7 @@
    min-width: 0;
    padding: clamp(10px, 1.2vw, 16px);
    border-radius: 9px;
-   background-color: var(--light-purple);
+   background-color: var(--pink);
 }
 
 .featured-column {
@@ -206,7 +210,7 @@
    display: flex;
    align-items: center;
    justify-content: flex-end;
-   gap: clamp(5px, 0.7vw, 10px);
+   gap: 5px;
    flex-shrink: 0;
 }
 
@@ -215,8 +219,8 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   width: clamp(32px, 2.7vw, 38px);
-   height: clamp(32px, 2.7vw, 38px);
+   width: 28px;
+   height: 28px;
    border-radius: 8px;
    color: var(--text-gray);
    text-decoration: none;
@@ -226,7 +230,7 @@
 }
 
 .navbar-action .material-symbols-outlined {
-   font-size: clamp(21px, 1.7vw, 24px);
+   font-size: 19px;
 }
 
 .navbar-action:hover {
@@ -241,34 +245,34 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   min-width: clamp(16px, 1.3vw, 18px);
-   height: clamp(16px, 1.3vw, 18px);
-   padding: 0 4px;
+   min-width: 14px;
+   height: 14px;
+   padding: 0 3px;
    border-radius: 50px;
    background-color: var(--red);
    color: var(--white);
-   font-size: clamp(9px, 0.7vw, 10px);
+   font-size: 9px;
    font-weight: 700;
 }
 
 .notification-badge {
    position: absolute;
-   top: -5px;
-   right: -5px;
-   width: clamp(16px, 1.3vw, 18px);
-   height: clamp(16px, 1.3vw, 18px);
+   top: -4px;
+   right: -4px;
+   width: 14px;
+   height: 14px;
    display: flex;
    align-items: center;
    justify-content: center;
    background-color: var(--purple-gray);
    color: var(--white);
-   font-size: clamp(9px, 0.7vw, 10px);
+   font-size: 9px;
    border-radius: 50%;
 }
 
 .navbar-divider {
    width: 1px;
-   height: clamp(20px, 1.8vw, 25px);
+   height: 20px;
    margin: 0 3px;
    background-color: rgba(148, 154, 177, 0.3);
 }
@@ -276,12 +280,12 @@
 .profile-link {
    display: flex;
    align-items: center;
-   gap: clamp(6px, 0.7vw, 10px);
-   padding: 4px;
+   gap: 5px;
+   padding: 2px;
    border-radius: 30px;
    color: var(--dark-blue);
    text-decoration: none;
-   font-size: clamp(12px, 1vw, 14px);
+   font-size: 11px;
    white-space: nowrap;
    transition: box-shadow 0.2s ease;
 }
@@ -292,39 +296,40 @@
 }
 
 .profile-image {
-   width: clamp(32px, 2vw, 40px);
-   height: clamp(32px, 2vw, 40px);
+   width: 25px;
+   height: 25px;
    border-radius: 50%;
    background-color: var(--pink);
+   object-fit: cover;
 }
 
 .profile-name {
    color: var(--dark-blue);
-   font-size: clamp(12px, 1vw, 14px);
+   font-size: 11px;
    font-weight: 600;
    white-space: nowrap;
 }
 
-.site-header .navbar-toggler {
+.baczone-header .navbar-toggler {
    border: 1px solid var(--blue-gray);
-   padding: clamp(6px, 0.7vw, 8px) clamp(8px, 0.85vw, 10px);
+   padding: 2px 5px;
+   font-size: 13px;
 }
 
-.site-header .navbar-toggler:focus {
-   box-shadow: 0 0 0 3px var(--pink);
+.baczone-header .navbar-toggler:focus {
+   box-shadow: 0 0 0 2px var(--pink);
 }
 
-.site-header .dropdown-toggle::after {
-   margin-left: 8px;
+.baczone-header .dropdown-toggle::after {
+   margin-left: 6px;
    vertical-align: 0.15em;
    border-top: 0.35em solid;
    border-right: 0.35em solid transparent;
    border-bottom: 0;
    border-left: 0.35em solid transparent;
 }
-.course-column {
-   background-color: var(--pink);
-}
+
+
 
 /* /////////////////////// */
 .hero-section {
@@ -2260,7 +2265,7 @@ box-shadow: 0 0 10px var(--dark-blue);
    margin-top: 25px;
    width: 91%;
 }
-select,.input-course-search{
+select,.input-course-search ,.input-book-search{
   
    height: 40px;
    border-radius: 10px 10px;
@@ -2275,7 +2280,7 @@ select,.input-course-search{
    gap: 30px;
   
 }
-.shose-courses-item .course-link {
+.shose-courses-item .course-link,.course-book {
    text-decoration: none ;
    color: rgb(70 70 77 / var(--tw-text-opacity, 1));
    padding: 10px 8px;
@@ -2386,7 +2391,7 @@ transition: 0.5s;
   transform: translateY(-8px);
    box-shadow: 0 0 10px var(--dark-blue);
 }
-.courses-cards{
+.courses-cards,.cards-books{
    background-color:rgb(250 248 255 / var(--tw-bg-opacity, 1));
 }
 .course-card-text{
@@ -2428,6 +2433,83 @@ main{
    color: var(--dark-blue);
 
 }
+.cart-books{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+   padding: 0px 10px;
+
+}
+.card-book{
+   margin-top: 20px;
+   border: 1px solid  var(--white);
+   background-color: var(--white);
+   border-radius: 10px 10px;
+   width: clamp(300px,31vw,450px);
+   height: auto;
+   transition: 0.5s;
+}
+.card-book:hover{
+   transform: translateY(-10px);
+   box-shadow: 0 0 8px var(--dark-blue);
+}
+
+
+.card-book-pargraph{
+  
+   width: clamp(250px,23.4vw,350px);
+}
+.book-text{
+   padding: 10px 10px;
+}
+.image-book{
+   width: 100%;
+   height: 400px;
+   border-radius: 10px 10px 0 0;
+}
+.card-book-description,.shop-books{
+   display: flex;
+   gap: 7px;
+  
+}
+.prices-books{
+    display: flex;
+   gap: 7px;
+   padding-top: 8px;
+}
+.card-book-description p{
+   font-size: 13px;
+}
+.card-book-description i{
+   font-size: 18px;
+}
+.card-book-price{
+display: flex;
+justify-content: space-between;
+
+}
+.card-book-price .des-book{
+   color: var(--dark-blue);
+}
+.shop-books{
+   border-radius: 5px 5px;
+     background-color: rgb(87 90 119 / var(--tw-bg-opacity, 1));
+    color: var(--white);
+    padding: 7px 9px;
+    transition: 0.5s;
+   }
+
+   .shop-books:hover{
+      opacity: 0.9;
+      box-shadow: 0 0 7px var(--dark-blue);
+   }
+.shop-books a{
+   color: var(--white);
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.5s;
+}
+
 @media (max-width: 991px) {
    .baczone-navbar {
       min-height: 80px;
@@ -2960,8 +3042,8 @@ main{
 .course-carts-header-path{
    display: block;
 }
-.select-course{
-  padding-left: 50px;
+.select-course,.cards-books{
+  padding-left: 55px;
 }
 .show-cards button{
    padding: 0px 0px;
@@ -2969,6 +3051,10 @@ main{
 .courses-cards{
    padding-left:25px ;
 }
+.shop-books{
+
+padding: 3px 3px;
+   }
 }
 
 @media (max-width: 600px) {
