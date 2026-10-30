@@ -534,7 +534,6 @@ else{
 let params = new URLSearchParams(window.location.search);
 let grade = params.get("grade");
 let book_fixed = document.querySelector(".book-fixed");
-
 if (book_fixed) {
     if (category === "Arabic") {
         book_fixed.href = `book.html?grade=${grade}&category=Arabic`;
@@ -817,10 +816,430 @@ let arabic_sec3 = [
         des_book: "410 EGP",
     },
 ];
+let english_sec1 = [
+    {
+        imageBook: "image/english_first_secondary_01.png",
+        book_pargraph: "The Complete English Grammar Reference for First Secondary Students & Exam Preparation",
+        price_book: "180 EGP",
+        des_book: "210 EGP",
+        name_book: "Mr. Ahmed Saad",
+    },
+    {
+        imageBook: "image/english_first_secondary_02.png",
+        book_pargraph: "The Essential Grammar Practice Book for First Secondary Students & Language Skills Development",
+        price_book: "150 EGP",
+        des_book: "180 EGP",
+        name_book: "Mr. Sarah Ahmed",
+    },
+    {
+        imageBook: "image/english_first_secondary_03.png",
+        book_pargraph: "The Complete Reading Skills Reference for First Secondary Students & Text Analysis",
+        price_book: "165 EGP",
+        des_book: "195 EGP",
+        name_book: "Mr. Omar Khaled",
+    },
+    {
+        imageBook: "image/english_first_secondary_04.png",
+        book_pargraph: "The English Literature Study Guide for First Secondary Students & Literary Text Analysis",
+        price_book: "175 EGP",
+        des_book: "220 EGP",
+        name_book: "Mr. Mariam Hassan",
+    },
+    {
+        imageBook: "image/english_first_secondary_05.png",
+        book_pargraph: "The Complete Vocabulary Building Reference for First Secondary Students & Word Usage",
+        price_book: "140 EGP",
+        des_book: "165 EGP",
+        name_book: "Mr. Youssef Ali",
+    },
+    {
+        imageBook: "image/english_first_secondary_06.png",
+        book_pargraph: "The English Writing Skills Guide for First Secondary Students & Essay Preparation",
+        price_book: "155 EGP",
+        des_book: "190 EGP",
+        name_book: "Mr. Nour Mohamed",
+    },
+    {
+        imageBook: "image/english_first_secondary_07.png",
+        book_pargraph: "The Complete English Revision Book for First Secondary Students & Final Exam Strategies",
+        price_book: "190 EGP",
+        des_book: "240 EGP",
+        name_book: "Mr. Mahmoud Ibrahim",
+    },
+    {
+        imageBook: "image/english_first_secondary_08.png",
+        book_pargraph: "The Reading Comprehension Practice Book for First Secondary Students & Text Understanding",
+        price_book: "145 EGP",
+        des_book: "170 EGP",
+        name_book: "Mr. Farida Mahmoud",
+    },
+    {
+        imageBook: "image/english_first_secondary_09.png",
+        book_pargraph: "The Complete Grammar Lessons Reference for First Secondary Students & Practical Exercises",
+        price_book: "160 EGP",
+        des_book: "190 EGP",
+        name_book: "Mr. Abdelrahman Adel",
+    },
+    {
+        imageBook: "image/english_first_secondary_10.png",
+        book_pargraph: "The English Speaking Skills Guide for First Secondary Students & Pronunciation Practice",
+        price_book: "135 EGP",
+        des_book: "160 EGP",
+        name_book: "Mr. Malak Ibrahim",
+    },
+    {
+        imageBook: "image/english_first_secondary_11.png",
+        book_pargraph: "The Complete English Exam Preparation Book for First Secondary Students & Practice Tests",
+        price_book: "185 EGP",
+        des_book: "230 EGP",
+        name_book: "Mr. Amr Tarek",
+    },
+    {
+        imageBook: "image/english_first_secondary_12.png",
+        book_pargraph: "The Advanced English Grammar Reference for First Secondary Students & Complex Sentence Structure",
+        price_book: "170 EGP",
+        des_book: "200 EGP",
+        name_book: "Mr. Jana Mostafa",
+    },
+    {
+        imageBook: "image/english_first_secondary_13.png",
+        book_pargraph: "The English Conversation Practice Guide for First Secondary Students & Communication Skills",
+        price_book: "145 EGP",
+        des_book: "175 EGP",
+        name_book: "Mr. Karim Ashraf",
+    },
+    {
+        imageBook: "image/english_first_secondary_14.png",
+        book_pargraph: "The Creative English Writing Reference for First Secondary Students & Essay Development",
+        price_book: "155 EGP",
+        des_book: "185 EGP",
+        name_book: "Mr. Aya Khaled",
+    },
+    {
+        imageBook: "image/english_first_secondary_15.png",
+        book_pargraph: "The Complete English Exercises Book for First Secondary Students & Language Practice",
+        price_book: "150 EGP",
+        des_book: "175 EGP",
+        name_book: "Mr. Mostafa Hany",
+    },
+    {
+        imageBook: "image/english_first_secondary_16.png",
+        book_pargraph: "The English Literature Review Guide for First Secondary Students & Comprehensive Text Analysis",
+        price_book: "165 EGP",
+        des_book: "210 EGP",
+        name_book: "Mr. Habiba Ali",
+    },
+    {
+        imageBook: "image/english_first_secondary_17.png",
+        book_pargraph: "The Complete English Language Skills Book for First Secondary Students & Practical Learning",
+        price_book: "175 EGP",
+        des_book: "205 EGP",
+        name_book: "Mr. Hassan Mahmoud",
+    },
+    {
+        imageBook: "image/english_first_secondary_18.png",
+        book_pargraph: "The English Workbook Reference for First Secondary Students & Guided Learning Activities",
+        price_book: "140 EGP",
+        des_book: "170 EGP",
+        name_book: "Mr. Salma Adel",
+    },
+    {
+        imageBook: "image/english_first_secondary_19.png",
+        book_pargraph: "The Final English Exam Revision Guide for First Secondary Students & Important Questions",
+        price_book: "180 EGP",
+        des_book: "230 EGP",
+        name_book: "Mr. Hana Tarek",
+    },
+    {
+        imageBook: "image/english_first_secondary_20.png",
+        book_pargraph: "The Complete English Test Practice Book for First Secondary Students & Assessment Techniques",
+        price_book: "155 EGP",
+        des_book: "185 EGP",
+        name_book: "Mr. Mohamed Samir",
+    },
+];
+let english_sec2 = [
+    {
+        imageBook: "image/english_second_secondary_01.png",
+        book_pargraph: "The Complete English Grammar Reference for Second Secondary Students & Exam Preparation",
+        price_book: "190 EGP",
+        des_book: "230 EGP",
+        name_book: "Mr. Ahmed Saad",
+    },
+    {
+        imageBook: "image/english_second_secondary_02.png",
+        book_pargraph: "The Essential Grammar Practice Book for Second Secondary Students & Language Skills Development",
+        price_book: "165 EGP",
+        des_book: "195 EGP",
+        name_book: "Mr. Sarah Ahmed",
+    },
+    {
+        imageBook: "image/english_second_secondary_03.png",
+        book_pargraph: "The Complete Reading Skills Reference for Second Secondary Students & Text Analysis",
+        price_book: "175 EGP",
+        des_book: "210 EGP",
+        name_book: "Mr. Omar Khaled",
+    },
+    {
+        imageBook: "image/english_second_secondary_04.png",
+        book_pargraph: "The English Literature Study Guide for Second Secondary Students & Literary Text Analysis",
+        price_book: "185 EGP",
+        des_book: "225 EGP",
+        name_book: "Mr. Mariam Hassan",
+    },
+    {
+        imageBook: "image/english_second_secondary_05.png",
+        book_pargraph: "The Complete Vocabulary Building Reference for Second Secondary Students & Word Usage",
+        price_book: "150 EGP",
+        des_book: "180 EGP",
+        name_book: "Mr. Youssef Ali",
+    },
+    {
+        imageBook: "image/english_second_secondary_06.png",
+        book_pargraph: "The English Writing Skills Guide for Second Secondary Students & Essay Preparation",
+        price_book: "165 EGP",
+        des_book: "200 EGP",
+        name_book: "Mr. Nour Mohamed",
+    },
+    {
+        imageBook: "image/english_second_secondary_07.png",
+        book_pargraph: "The Complete English Revision Book for Second Secondary Students & Final Exam Strategies",
+        price_book: "200 EGP",
+        des_book: "250 EGP",
+        name_book: "Mr. Mahmoud Ibrahim",
+    },
+    {
+        imageBook: "image/english_second_secondary_08.png",
+        book_pargraph: "The Reading Comprehension Practice Book for Second Secondary Students & Text Understanding",
+        price_book: "155 EGP",
+        des_book: "185 EGP",
+        name_book: "Mr. Farida Mahmoud",
+    },
+    {
+        imageBook: "image/english_second_secondary_09.png",
+        book_pargraph: "The Complete Grammar Lessons Reference for Second Secondary Students & Practical Exercises",
+        price_book: "170 EGP",
+        des_book: "200 EGP",
+        name_book: "Mr. Abdelrahman Adel",
+    },
+    {
+        imageBook: "image/english_second_secondary_10.png",
+        book_pargraph: "The English Speaking Skills Guide for Second Secondary Students & Pronunciation Practice",
+        price_book: "145 EGP",
+        des_book: "175 EGP",
+        name_book: "Mr. Malak Ibrahim",
+    },
+    {
+        imageBook: "image/english_second_secondary_11.png",
+        book_pargraph: "The Complete English Exam Preparation Book for Second Secondary Students & Practice Tests",
+        price_book: "195 EGP",
+        des_book: "240 EGP",
+        name_book: "Mr. Amr Tarek",
+    },
+    {
+        imageBook: "image/english_second_secondary_12.png",
+        book_pargraph: "The Advanced English Grammar Reference for Second Secondary Students & Complex Sentence Structure",
+        price_book: "180 EGP",
+        des_book: "215 EGP",
+        name_book: "Mr. Jana Mostafa",
+    },
+    {
+        imageBook: "image/english_second_secondary_13.png",
+        book_pargraph: "The English Conversation Practice Guide for Second Secondary Students & Communication Skills",
+        price_book: "155 EGP",
+        des_book: "185 EGP",
+        name_book: "Mr. Karim Ashraf",
+    },
+    {
+        imageBook: "image/english_second_secondary_14.png",
+        book_pargraph: "The Creative English Writing Reference for Second Secondary Students & Essay Development",
+        price_book: "165 EGP",
+        des_book: "195 EGP",
+        name_book: "Mr. Aya Khaled",
+    },
+    {
+        imageBook: "image/english_second_secondary_15.png",
+        book_pargraph: "The Complete English Exercises Book for Second Secondary Students & Language Practice",
+        price_book: "160 EGP",
+        des_book: "190 EGP",
+        name_book: "Mr. Mostafa Hany",
+    },
+    {
+        imageBook: "image/english_second_secondary_16.png",
+        book_pargraph: "The English Literature Review Guide for Second Secondary Students & Comprehensive Text Analysis",
+        price_book: "175 EGP",
+        des_book: "220 EGP",
+        name_book: "Mr. Habiba Ali",
+    },
+    {
+        imageBook: "image/english_second_secondary_17.png",
+        book_pargraph: "The Complete English Language Skills Book for Second Secondary Students & Practical Learning",
+        price_book: "185 EGP",
+        des_book: "220 EGP",
+        name_book: "Mr. Hassan Mahmoud",
+    },
+    {
+        imageBook: "image/english_second_secondary_18.png",
+        book_pargraph: "The English Workbook Reference for Second Secondary Students & Guided Learning Activities",
+        price_book: "150 EGP",
+        des_book: "180 EGP",
+        name_book: "Mr. Salma Adel",
+    },
+    {
+        imageBook: "image/english_second_secondary_19.png",
+        book_pargraph: "The Final English Exam Revision Guide for Second Secondary Students & Important Questions",
+        price_book: "190 EGP",
+        des_book: "240 EGP",
+        name_book: "Mr. Hana Tarek",
+    },
+    {
+        imageBook: "image/english_second_secondary_20.png",
+        book_pargraph: "The Complete English Test Practice Book for Second Secondary Students & Assessment Techniques",
+        price_book: "165 EGP",
+        des_book: "200 EGP",
+        name_book: "Mr. Mohamed Samir",
+    },
+];
+let english_sec3 = [
+    {
+        imageBook: "image/third_secondary_01.png",
+        book_pargraph: "The Complete English Grammar Reference for Third Secondary Students & Exam Preparation",
+        price_book: "200 EGP",
+        des_book: "240 EGP",
+        name_book: "Mr. Ahmed Saad",
+    },
+    {
+        imageBook: "image/third_secondary_02.png",
+        book_pargraph: "The Essential Grammar Practice Book for Third Secondary Students & Language Skills Development",
+        price_book: "175 EGP",
+        des_book: "210 EGP",
+        name_book: "Mr. Sarah Ahmed",
+    },
+    {
+        imageBook: "image/third_secondary_03.png",
+        book_pargraph: "The Complete Reading Skills Reference for Third Secondary Students & Text Analysis",
+        price_book: "185 EGP",
+        des_book: "220 EGP",
+        name_book: "Mr. Omar Khaled",
+    },
+    {
+        imageBook: "image/third_secondary_04.png",
+        book_pargraph: "The English Literature Study Guide for Third Secondary Students & Literary Text Analysis",
+        price_book: "195 EGP",
+        des_book: "235 EGP",
+        name_book: "Mr. Mariam Hassan",
+    },
+    {
+        imageBook: "image/third_secondary_05.png",
+        book_pargraph: "The Complete Vocabulary Building Reference for Third Secondary Students & Word Usage",
+        price_book: "160 EGP",
+        des_book: "190 EGP",
+        name_book: "Mr. Youssef Ali",
+    },
+    {
+        imageBook: "image/third_secondary_06.png",
+        book_pargraph: "The English Writing Skills Guide for Third Secondary Students & Essay Preparation",
+        price_book: "175 EGP",
+        des_book: "210 EGP",
+        name_book: "Mr. Nour Mohamed",
+    },
+    {
+        imageBook: "image/third_secondary_07.png",
+        book_pargraph: "The Complete English Revision Book for Third Secondary Students & Final Exam Strategies",
+        price_book: "210 EGP",
+        des_book: "260 EGP",
+        name_book: "Mr. Mahmoud Ibrahim",
+    },
+    {
+        imageBook: "image/third_secondary_08.png",
+        book_pargraph: "The Reading Comprehension Practice Book for Third Secondary Students & Text Understanding",
+        price_book: "165 EGP",
+        des_book: "200 EGP",
+        name_book: "Mr. Farida Mahmoud",
+    },
+    {
+        imageBook: "image/third_secondary_09.png",
+        book_pargraph: "The Complete Grammar Lessons Reference for Third Secondary Students & Practical Exercises",
+        price_book: "180 EGP",
+        des_book: "220 EGP",
+        name_book: "Mr. Abdelrahman Adel",
+    },
+    {
+        imageBook: "image/third_secondary_10.png",
+        book_pargraph: "The English Speaking Skills Guide for Third Secondary Students & Pronunciation Practice",
+        price_book: "155 EGP",
+        des_book: "190 EGP",
+        name_book: "Mr. Malak Ibrahim",
+    },
+    {
+        imageBook: "image/third_secondary_11.png",
+        book_pargraph: "The Complete English Exam Preparation Book for Third Secondary Students & Practice Tests",
+        price_book: "205 EGP",
+        des_book: "255 EGP",
+        name_book: "Mr. Amr Tarek",
+    },
+    {
+        imageBook: "image/third_secondary_12.png",
+        book_pargraph: "The Advanced English Grammar Reference for Third Secondary Students & Complex Sentence Structure",
+        price_book: "190 EGP",
+        des_book: "230 EGP",
+        name_book: "Mr. Jana Mostafa",
+    },
+    {
+        imageBook: "image/third_secondary_13.png",
+        book_pargraph: "The English Conversation Practice Guide for Third Secondary Students & Communication Skills",
+        price_book: "165 EGP",
+        des_book: "200 EGP",
+        name_book: "Mr. Karim Ashraf",
+    },
+    {
+        imageBook: "image/third_secondary_14.png",
+        book_pargraph: "The Creative English Writing Reference for Third Secondary Students & Essay Development",
+        price_book: "175 EGP",
+        des_book: "215 EGP",
+        name_book: "Mr. Aya Khaled",
+    },
+    {
+        imageBook: "image/third_secondary_15.png",
+        book_pargraph: "The Complete English Exercises Book for Third Secondary Students & Language Practice",
+        price_book: "170 EGP",
+        des_book: "205 EGP",
+        name_book: "Mr. Mostafa Hany",
+    },
+    {
+        imageBook: "image/third_secondary_16.png",
+        book_pargraph: "The English Literature Review Guide for Third Secondary Students & Comprehensive Text Analysis",
+        price_book: "185 EGP",
+        des_book: "225 EGP",
+        name_book: "Mr. Habiba Ali",
+    },
+    {
+        imageBook: "image/third_secondary_17.png",
+        book_pargraph: "The Complete English Language Skills Book for Third Secondary Students & Practical Learning",
+        price_book: "195 EGP",
+        des_book: "225 EGP",
+        name_book: "Mr. Hassan Mahmoud",
+    },
+    {
+        imageBook: "image/third_secondary_18.png",
+        book_pargraph: "The English Workbook Reference for Third Secondary Students & Guided Learning Activities",
+        price_book: "160 EGP",
+        des_book: "195 EGP",
+        name_book: "Mr. Salma Adel",
+    },
+    {
+        imageBook: "image/third_secondary_20.png",
+        book_pargraph: "The Final English Exam Revision Guide for Third Secondary Students & Important Questions",
+        price_book: "200 EGP",
+        des_book: "245 EGP",
+        name_book: "Mr. Hana Tarek",
+    },
+];
 let card_book = document.querySelectorAll(".card-book");
 
 function showbook(books) {
     for (let book = 0; book < books.length && book < card_book.length; book++) {
+        
         let imageBook = document.querySelectorAll(".image-book")[book];
         imageBook.src = books[book].imageBook;
 
@@ -839,6 +1258,8 @@ function showbook(books) {
         let des_book_cart = document.querySelectorAll(".des-book")[book];
         des_book_cart.innerHTML = books[book].des_book;
     }
+    
+
 }
 
 let books_book = new URLSearchParams(window.location.search);
@@ -850,6 +1271,10 @@ if (book_grade === "second" && book_category === "Arabic") {
     showbook(arabic_sec2);
 }else if(book_grade === "third" && book_category === "Arabic"){
     showbook(arabic_sec3);
-}else{
-
+}else if (book_grade === "first" && book_category === "English") {
+    showbook(english_sec1);
+}else if(book_grade === "second" && book_category === "English"){
+    showbook(english_sec2);
+}else if(book_grade === "third" && book_category === "English"){
+showbook(english_sec3);
 }
